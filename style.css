@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/b.png);
+    background-size:cover;
+    height:fit-content;
+}
+nav {
+    background-color: green;
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+    position: relative;
+}
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+.card {
+    text-align: center;
+    border: 3px solid green;
+    padding: 10px;
+    background-color: white;
+    height: 88%;
+    width: 90%;
+    cursor: pointer;
+}
+
+img{
+    height:250px;
+    width: 300px;
+}
+.hidden-description{
+    display: none;
+}
+
+h2{
+    text-align: center;
+    text-decoration: solid;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 3px solid green;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+#contact-form{
+    color: white;
+    background-color: green;
+    text-align: center;
+    
+}
+#contact-us{
+    padding: 50px;
+    font-size: 20px;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 5px;
+}
+#about-us{
+        padding: 50px;
+        border: 3px solid green;
+        background-color: white;
+        display: grid;
+        grid-template-rows:1fr;
+        gap: 10px;
+}
+video{
+    padding-right: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-column:1fr;
+    gap: 10px; 
+    justify-content: center;
+}
+div{
+        grid-column: 2
+}
+#message{
+    text-align: center;
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+    align-items: center;
+  
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: green;
+        left: 0px;
+    }
+
+    .menu.active li {
+        margin: 10px 0;
+        left: 0px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        left: 10px;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+    }
+
+.section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    border: 1px solid green;
+}
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 20px; 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+}
+
+/* Hide the hamburger menu icon in larger screens */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+    
+}

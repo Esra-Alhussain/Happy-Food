@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Food</title>
+</head>
+
+
+<body>
+        <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+            <li><a href="#card-section">Body Food Types</a></li>
+            <li><a href="#healthy-diet">Healthy Diet Table</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
+            <li><a href="#about-us">About us</a></li>
+        </ul>
+        </nav>
+
+       <h1>Happy Food</h1>
+       <section class="card-section">
+       <section class="card">
+        <section>
+            <h2>Mood Food</h2>
+            <img src="img/Mood.png"/>
+            <p>
+                <ul class="hidden-description">
+                    <li>vegetables (eg, carrots, dark leafy greens)</li>
+                    <li>fruits (eg, bananas, apples, citrus, berries)</li>
+                    <li>legumes (eg, lentils, chickpeas, beans)</li>
+                    <li>wholegrains (eg, rice, oats, breads)</li>
+                    <li> nuts and seeds</li>
+                   
+                </ul>
+            </p>
+           
+            <video></video>
+        
+        </section>
+        </section>
+
+        <section class="card ">
+           
+                <h2>Mucsle Food</h2>
+                <img src="img/Mucsle.png"/>
+                <p>
+                    <ul  class="hidden-description">
+                        <li >vegetables (eg, carrots, dark leafy greens)</li>
+                        <li>fruits (eg, bananas, apples, citrus, berries)</li>
+                    </ul>
+                </p>
+            
+            
+            </section>
+            <section class="card">
+           
+                <h2>Brain Food</h2>
+                <img src="img/brain.png"/>
+                <p></p>
+                    <ul  class="hidden-description">
+                        <li >vegetables (eg, carrots, dark leafy greens)</li>
+                        <li>fruits (eg, bananas, apples, citrus, berries)</li>
+                    </ul>
+            </section>
+       </section>
+        <h1>Contact Us </h1>
+       <section id="contact-us">
+       
+        <form id="contact-form">
+            <div class="form-group">
+                <!-- Text input field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <!-- Email input field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <!-- Dropdown/select menu -->
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Support Request">Support Request</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+    
+            <div class="form-group">
+                <!-- Textarea for comments (placed under "Email" input) -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+    
+            <!-- Checkboxes and radio buttons (kept as is) -->
+            <label>Subscribe to newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            
+            <label>Preferred contact method:</label>
+            <input type="radio" id="contact-email" name="contact-method" value="email">
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+            <label for="contact-phone">Phone</label>
+    
+            <!-- Submit button -->
+            <input type="button" value="Submit" onclick="showMessage()">
+        </form>
+    
+        <div id="message" style="display: none;">
+            Thank you for your message! We'll get back to you soon.
+        </div>
+    
+       </section>
+
+       <section id="healthy-diet">
+        
+    <h1>Healthy Diet</h1>
+
+    <table>
+        <tr>
+            <th>Meal</th>
+            <th>Food</th>
+            <th>Portion</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Breakfast</td>
+            <td>Oatmeal</td>
+            <td>1 cup</td>
+        </tr>
+        <tr>
+            <td>Fresh Fruit</td>
+            <td>1 serving</td>
+        </tr>
+        <tr>
+            <td>Low-Fat Yogurt</td>
+            <td>1 container</td>
+        </tr>
+        <tr>
+            <td>Lunch</td>
+            <td>Grilled Chicken Salad</td>
+            <td>1 bowl</td>
+        </tr>
+        <tr>
+            <td>Dinner</td>
+            <td>Salmon with Vegetables</td>
+            <td>1 plate</td>
+        </tr>
+        <tr>
+            <td>Snack</td>
+            <td>Almonds</td>
+            <td>1 handful</td>
+        </tr>
+    </table>
+       </section>
+       <h1>About Us</h1>
+       <section id="about-us">
+      
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/7UDx1RF9Oho?si=hQM5Qy8VJar67JM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div>
+            <li> Food marketing is all around us. You likely receive a constant stream of changing and often conflicting messages about food. This can make it hard to make healthy food choices.
+            </li>
+            <li> Food marketing can impact you in many different ways. It is designed to:   </li>
+            <li>create food trends encourage you to:     </li>
+            <li>buy certain foods or drinks</li>
+            <li>buy foods in order to get promotional items such as:</li>
+            <li>loyalty points</li>
+            <li>tickets to movies or sports events</li>
+            <li>coupons for future food purchases</li>
+            <li>create links between certain foods or brands and a particular lifestyle</li>
+            <li>build brand loyalty so you will continue to purchase from a particular store or products with a brand name</li>
+        </div>
+       </section>
+</body>
+<script src="script.js" defer></script>
+
+</html>
